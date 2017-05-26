@@ -1,0 +1,92 @@
+TODO:
+
+
+Here is the order of messages that need to be handled:
+
+cli=>ser ClientHello
+ser<=cli ServerHello
+cli=>ser Login
+ser<=cli LoginOK
+
+
+======
+ClientHello: {
+  "protocol": 1,
+  "keyVersion": 10,
+  "majorVersion": 3,
+  "minorVersion": 0,
+  "build": 193,
+  "contentHash": "e99dcd87d0f3ba976efd982ef51a7f393463aeca", #40len
+  "deviceType": 2,
+  "appStore": 2
+}
+======
+ServerHello: {
+  "sessionKey": "62af74941406e55a5e9a14139ca9e47f7e0abde5abfa7490" #48len
+}
+======
+Login: {
+  "accountId": 214754108701,
+  "passToken": "df6mhsb2xx22w9j2t6hj3y2wafc47cp9m6rb76yb",
+  "clientMajorVersion": 3,
+  "clientMinorVersion": 0,
+  "clientBuild": 193,
+  "resourceSha": "e99dcd87d0f3ba976efd982ef51a7f393463aeca",
+  "UDID": "",
+  "openUdid": "b4b94d4540ba4f65",
+  "macAddress": "",
+  "device": "Z958",
+  "advertisingGuid": "e3e6aa34-ccf5-4e41-9c98-1fbd4351b490",
+  "osVersion": "5.1",
+  "isAndroid": 1,
+  "unknown_13": "",
+  "androidID": "b4b94d4540ba4f65",
+  "preferredDeviceLanguage": "en-US",
+  "unknown_16": 1,
+  "preferredLanguage": 0,
+  "facebookAttributionId": "",
+  "advertisingEnabled": 0,
+  "appleIFV": "",
+  "appStore": 2,
+  "kunlunSSO": "",
+  "kunlunUID": "",
+  "unknown_24": "",
+  "unknown_25": "",
+  "unknown_26": 0
+}
+======
+LoginOk: {
+  "userId": 214754108701,
+  "homeId": 214754108701,
+  "userToken": "df6mhsb2xx22w9j2t6hj3y2wafc47cp9m6rb76yb",
+  "gameCenterId": "",
+  "facebookId": "",
+  "serverMajorVersion": 3,
+  "serverBuild": 193,
+  "contentVersion": 14,
+  "environment": "prod",
+  "sessionCount": 14,
+  "playTimeSeconds": 2247,
+  "daysSinceStartedPlaying": 0,
+  "facebookAppId": "1475268786112433",
+  "serverTime": "1495734830699",
+  "accountCreatedDate": "1495662828000",
+  "unknown_16": 0,
+  "googleServiceId": "",
+  "unknown_18": "",
+  "unknown_19": "",
+  "region": "US",
+  "contentURL": "http://7166046b142482e67b30-2a63f4436c967aa7d355061bd0d924a1.r65.cf1.rackcdn.com",
+  "eventAssetsURL": "https://event-assets.clashroyale.com",
+  "unknown_23": 1
+}
+=====
+OwnHomeData: {
+  "age": 50,
+  "id": 5743901,
+  "timeStamp": 1153357641951803346,
+  "unknown_3": 28691130,
+  "unknown_4": 2450194435,
+  "unknown_5": 142666469
+}
+
